@@ -1,0 +1,16 @@
+{
+  "name": "JavDoeSearcher",
+  "version": "1.236",
+  "description": "search bot", 
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "javdoe.js" ],
+    "matches": [ "https://javdoe.tv/*"]
+  }],
+  "permissions": ["https://javdoe.tv/*", "https://javdoe.tv/movie/*", "activeTab"],
+  "manifest_version": 2
+}
+
